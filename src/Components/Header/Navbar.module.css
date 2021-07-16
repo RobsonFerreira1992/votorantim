@@ -1,0 +1,53 @@
+.navBar {
+  grid-area: nav;
+  display: grid;
+  align-content: center;
+}
+
+.navBar ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+}
+
+.navBar ul li {
+  text-align: center;
+  margin: 0px 10px;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+@media(max-width:768px) {
+  .navBar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #0000c0;
+    transform: translateX(-100%);
+    transition: all 0.4s ease-out;
+  }
+  .maxNav {
+    top: 80px;
+    height: calc(100vh - 80px);
+  }
+  .minNav {
+    top: 80px;
+    height: calc(100vh - 60px);
+  }
+  .menuOpened {
+    transform: translateX(0);
+  }
+  .navBar ul {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: row;
+    grid-gap: 80px;
+  }
+  .navBar li {
+    text-align: center;
+  }
+}

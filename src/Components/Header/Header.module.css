@@ -1,0 +1,157 @@
+.header {
+  width: 100%;
+  height: 100px;
+  font-size: 16px;
+  position: fixed;
+  z-index: 1;
+  height: 100px;
+  transition: all 0.4s ease-out;
+  display: flex;
+}
+
+.maxHeader {
+  background-color: #0000c0;
+  height: 100px;
+}
+
+.minHeader {
+  background-color: #0000c0;
+  height: 80px;
+}
+
+.containerH {
+  width: 100%;
+  height: 100%;
+  /* margin: 0 auto; */
+  padding: 0 25px;
+  display: grid;
+  grid-template-areas: 'nav ... log';
+  grid-template-columns: 1fr auto;
+  align-content: center;
+}
+
+@media(max-width:768px) {
+  .maxHeader {
+    height: 80px;
+  }
+  .minHeader {
+    height: 60px;
+  }
+  .containerH {
+    position: relative;
+    padding: 0 60px;
+    grid-template-areas: "log ... mnu";
+  }
+}
+
+.navBar {
+  grid-area: nav;
+  display: grid;
+  align-content: center;
+  background-color: #0000c0;
+  height: auto;
+}
+
+.navBar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.navBar ul li {
+  text-align: center;
+  margin: 0px 10px;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+@media(max-width:768px) {
+  .navBar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: all 0.4s ease-out;
+  }
+  .maxNav {
+    top: 80px;
+    height: calc(100vh - 80px);
+  }
+  .minNav {
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+  .menuOpened {
+    transform: translateX(0);
+  }
+  .navBar ul {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+  }
+  .navBar li {
+    text-align: center;
+  }
+}
+
+@media(max-width:768px) {
+  .menu {
+    grid-area: mnu;
+    display: grid;
+    align-content: center;
+  }
+  .hamburguer {
+    position: relative;
+    width: 28px;
+    height: 3px;
+    transition: all 0.4s ease-out;
+    background-color: #99d836;
+  }
+  .hamburguer::before {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-out;
+    background-color: #99d836;
+  }
+  .hamburguer::after {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-out;
+    background-color: #99d836;
+  }
+  .maxHamburguer, .maxHamburguer::before, .maxHamburguer::after {
+    background-color: #99d836;
+  }
+  .minHamburguer, .minHamburguer::before, .minHamburguer::after {
+    background-color: #ffff;
+  }
+  .minNav a {
+    font-size: 0.875em;
+    color: #99d836;
+  }
+  .closeBtn {
+    width: 32px;
+    transform: rotateZ(45deg);
+  }
+  .closeBtn::before, .closeBtn::after {
+    top: 0 !important;
+    transform: rotateZ(90deg) !important;
+  }
+}

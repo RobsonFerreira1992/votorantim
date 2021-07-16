@@ -1,0 +1,23 @@
+.footer {
+  background-color: #0c46e6;
+  padding: 40px 0 30px 0;
+}
+
+.footer a {
+  margin: 0 2px;
+}
+
+.footer a .iconsSociais {
+  width: 30px;
+}
+
+.footer p {
+  font-family: 'votorantim-regular';
+  font-size: 12px;
+  color: #fff;
+  margin: 0;
+}
+
+.footer .blendon {
+  font-size: 8px;
+}

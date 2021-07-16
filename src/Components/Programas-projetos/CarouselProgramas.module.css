@@ -1,0 +1,103 @@
+.slickFlip {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.slickFlip .slick-prev {
+  left: -50px;
+}
+
+.slickFlip .slick-prev, .projetos-programas .slickFlip .slick-next {
+  width: 30px;
+  height: 30px
+}
+
+.slickFlip .slick-prev:before {
+  content: url('../../imagens/seta-esquerda.svg') !important;
+  width: 30px;
+  height: 30px;
+  display: block
+}
+
+.slickFlip .slick-prev:hover:before {
+  content: url("../../imagens/seta-esquerda.svg") !important;
+}
+
+.slickFlip .slick-next:hover:before {
+  content: url("../../imagens/seta-direita.svg") !important;
+}
+
+.slickFlip .slick-next:before {
+  content: url("../../imagens/seta-direita.svg") !important;
+  width: 30px;
+  height: 30px;
+  display: block
+}
+
+.slickFlip .slick-prev.slick-disabled:before, .projetos-programas .slickFlip .slick-next.slick-disabled:before {
+  opacity: unset
+}
+
+.slickFlip .flipCard {
+  width: 278px;
+  height: 299px;
+  perspective: 1000px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.slickFlip .flipCard:hover .flipCardInner {
+  transform: rotateY(180deg)
+}
+
+.slickFlip .flipCard .flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform .6s;
+  transform-style: preserve-3d;
+}
+
+.slickFlip .flipCard .flipCardInner .flipCardFront, .slickFlip .flipCard .flipCardInner .flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.slickFlip .flipCard .flipCardInner .flipCardFront {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff
+}
+
+.slickFlip .flipCard .flipCardInner .flipCardFront h3 {
+  position: absolute;
+  color: #fff;
+  font-family: 'votorantim-bold';
+  font-size: 24px
+}
+
+.slickFlip .flipCard .flipCardInner .flipCardBack {
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.slickFlip .flipCard .flipCardInner .flipCardBack p {
+  font-weight: 400;
+  color: #000;
+  text-align: left;
+  font-family: 'votorantim-regular';
+}
+
+@media(max-width:768px) {
+  .notes-slider .slick-next, .slick-prev {
+    display: none !important;
+  }
+}

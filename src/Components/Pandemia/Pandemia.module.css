@@ -1,0 +1,28 @@
+.pandemiaAtuacao {
+  width: 100%;
+  height: 500px;
+  background-image: url('../../imagens/pandemia-e-atuacao.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.conteudoPandemia {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.conteudoPandemia .titulo h1 {
+  font-family: 'votorantim-bold';
+  color: #fff;
+  font-size: 3rem;
+}
+
+.conteudoPandemia .content {
+  font-family: 'votorantim-regular';
+  color: #fff;
+  font-size: 16px;
+}

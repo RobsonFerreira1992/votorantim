@@ -1,0 +1,11 @@
+.projetosProgramas {
+  margin: 50px 0px;
+}
+
+.projetosProgramas .titulo {
+  width: 100%;
+  text-align: center;
+  font-family: 'votorantim-bold';
+  color: #0b47e5;
+  font-size: 3rem;
+}

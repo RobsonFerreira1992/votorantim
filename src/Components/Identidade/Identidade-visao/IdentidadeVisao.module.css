@@ -1,0 +1,33 @@
+.caracteristicasvisao {
+  padding: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.caracteristicasvisao h2 {
+  font-size: 30px;
+  color: #b3dd33;
+  font-family: 'votorantim-bold';
+  margin-bottom: 20px;
+}
+
+.caracteristicasvisao .content {
+  font-family: 'votorantim-regular';
+  color: #000;
+  font-size: 16px;
+  width: 100%;
+}
+
+.visao {
+  width: 80%;
+  margin-left: auto;
+}
+
+.caracteristicasImgVisao {
+  padding: 0 0 0 43px;
+}
+
+.caracteristicasImgVisao img {
+  float: right;
+}

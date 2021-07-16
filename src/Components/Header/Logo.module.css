@@ -1,0 +1,28 @@
+.logo {
+  grid-area: log;
+}
+
+.logo .img {
+  float: right;
+  transition: all 0.4s ease-out;
+  width: 150px;
+}
+
+.maxLogo .img {
+  width: 150px;
+}
+
+.minLogo .img {
+  width: 50px;
+}
+
+@media(max-width:768px) {
+  .maxLogo .img {
+    width: 115px;
+    float: left;
+  }
+  .minLogo .img {
+    width: 50px;
+    float: left;
+  }
+}

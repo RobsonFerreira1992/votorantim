@@ -1,0 +1,36 @@
+.language {
+  width: 5%;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.language ul {
+  display: flex;
+  background-color: #b3dd33;
+  list-style: none;
+  margin: 0;
+  padding: 0 8px;
+  width: 70px;
+}
+
+.language ul li {
+  padding: 1px 2px;
+}
+
+.language ul li a {
+  text-decoration: none;
+  font-family: 'votorantim-regular';
+  font-size: 13px;
+  color: #0002be;
+}
+
+span {
+  color: #0002be;
+}
+
+@media(max-width:768px) {
+  .language {
+    display: none;
+  }
+}

@@ -1,0 +1,63 @@
+.mensagemConselho {
+  position: relative;
+  padding: 100px 0 0px 0;
+}
+
+.mensagemConselho .titulo {
+  width: 100%;
+  text-align: center;
+  font-family: 'votorantim-bold';
+  color: #0b47e5;
+  font-size: 3rem;
+}
+
+.boxPresidentContent .boxContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.boxPresidentContent .boxContent .boxPresidente {
+  margin-bottom: 50px;
+}
+
+.boxPresidentContent .boxContent .boxPresidente .boxImg {
+  position: relative;
+}
+
+.boxPresidentContent .boxContent .boxPresidente .boxImg button {
+  width: 50px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  bottom: 10px;
+  right: 9px;
+}
+
+.boxPresidentContent .boxContent .boxInformacoes {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.boxPresidentContent .boxContent .boxInformacoes h3 {
+  font-size: 24px;
+  color: #b3dd33;
+  font-family: 'votorantim-bold';
+  margin: 0;
+}
+
+.boxPresidentContent .boxContent .boxInformacoes span {
+  font-family: 'votorantim-light';
+  color: #fff;
+}
+
+.boxBluePresidente {
+  width: 100%;
+  height: 300px;
+  background-color: #0000c0;
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
+}

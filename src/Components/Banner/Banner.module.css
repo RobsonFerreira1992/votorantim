@@ -1,0 +1,27 @@
+.video {
+  width: 100%;
+  position: relative;
+}
+
+.video img {
+  width: 100%;
+}
+
+.headerTitulo {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.headerTitulo h1 {
+  font-size: 30px;
+  font-family: 'votorantim-bold';
+  color: #fff;
+}
+
+.headerTitulo h1 span {
+  font-size: 60px;
+  font-family: 'votorantim-black';
+  color: #b3dd33;
+  margin-left: 185px;
+}

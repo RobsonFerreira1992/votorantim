@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'votorantim-black';
+  src: url('./fonts/VotorantimSans-Black.ttf')
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'votorantim-bold';
+  src: url('./fonts/VotorantimSans-Bold.ttf')
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'votorantim-light';
+  src: url('./fonts/VotorantimSans-Light.ttf')
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: 'votorantim-medium';
+  src: url('./fonts/VotorantimSans-Medium.ttf')
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: 'votorantim-regular';
+  src: url('./fonts/VotorantimSans-Regular.ttf')
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: 'votorantim-thin';
+  src: url('./fonts/VotorantimSans-Thin.ttf')
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
