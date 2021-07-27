@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Relatorio.module.css'
 import  DownloadDireita from '../../imagens/download-ilustracao-direita.png';
-import BotaoTopo from '../../imagens/botao-topo.svg'
+import BotaoTopo from '../../imagens/botao-topo.svg';
+import {Link} from 'react-scroll'
 const Relatorio = () => {
   return (
     <section className={styles.relatorio} id="relatorio">
@@ -27,9 +28,10 @@ const Relatorio = () => {
           </div>
         </div>
       </div>
-      <a href="#header-cabecalho" className={styles.botaoTopo}>
+      <Link  className={styles.botaoTopo} to="header-cabecalho"  smooth={true} spy={true} duration={500}>
         <img src={BotaoTopo} alt="botão topo" />
-      </a>
+      </Link>
+
     </section>
   )
 }

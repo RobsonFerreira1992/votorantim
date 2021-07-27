@@ -8,4 +8,14 @@
   font-family: 'votorantim-bold';
   color: #0b47e5;
   font-size: 3rem;
+  margin: 30px 0px 80px 0px;
+}
+
+@media(max-width:767px) {
+  .destaques {
+    padding: 50px 0px;
+  }
+  .destaques .titulo {
+    margin: 10px 0px 30px 0px;
+  }
 }

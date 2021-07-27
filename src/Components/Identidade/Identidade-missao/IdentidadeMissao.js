@@ -6,8 +6,8 @@ import missao from  '../../../imagens/missao.png';
 
 const IdentidadeMissao = () => {
   return (
-    <div className="row mt-5" id="missao">
-      <div className={`${styles.caracteristicasIimgMissao}  col-lg-6`}>
+    <div className="row mt-5 " id="missao">
+      <div className={`${styles.caracteristicasIimgMissao} p-0 col-lg-6`}>
         <img src={missao} alt="missão" className={`${styles.img}  img-fluid`} />
       </div>
       <div className={`${styles.caracteristicas} col-lg-6`}>

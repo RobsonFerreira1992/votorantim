@@ -30,3 +30,12 @@
 .caracteristicas .missao {
   width: 80%;
 }
+
+@media(max-width:767px) {
+  .caracteristicas {
+    padding: 20px;
+  }
+  .caracteristicas .missao {
+    width: 100%;
+  }
+}

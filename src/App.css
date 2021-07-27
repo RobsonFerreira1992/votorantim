@@ -37,3 +37,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+p {
+  font-family: 'votorantim-regular';
+  font-size: 16px;
+  width: 100%;
+}

@@ -4,7 +4,7 @@ import visao from '../../../imagens/visao.png';
 
 const IdentidadeVisao = () => {
   return (
-    <div className="row mt-5 box-dis" id="visao">
+    <div className={`${styles.boxDis} row mt-5 `} id="visao">
     <div className={`${styles.caracteristicasvisao} col-lg-6`}>
       <div className={styles.visao}>
         <div className="titulo">

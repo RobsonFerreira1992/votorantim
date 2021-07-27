@@ -30,3 +30,12 @@
 .caracteristicasImgProposito .img {
   float: left;
 }
+
+@media(max-width:767px) {
+  .caracteristicasProposito {
+    padding: 20px;
+  }
+  .caracteristicasProposito .proposito {
+    width: 100%;
+  }
+}

@@ -31,3 +31,16 @@
 .caracteristicasImgVisao img {
   float: right;
 }
+
+@media(max-width:767px) {
+  .boxDis {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .caracteristicasvisao {
+    padding: 20px;
+  }
+  .caracteristicasvisao .visao {
+    width: 100%;
+  }
+}

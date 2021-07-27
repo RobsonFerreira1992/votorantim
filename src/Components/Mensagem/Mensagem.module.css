@@ -9,6 +9,7 @@
   font-family: 'votorantim-bold';
   color: #0b47e5;
   font-size: 3rem;
+  margin: 30px 0px 80px 0px;
 }
 
 .boxPresidentContent .boxContent {
@@ -60,4 +61,16 @@
   position: absolute;
   bottom: 0px;
   z-index: -1;
+}
+
+@media(max-width:767px) {
+  .mensagemConselho {
+    padding: 0;
+  }
+  .mensagemConselho .titulo {
+    margin: 30px 0px 30px 0px;
+  }
+  .boxBluePresidente {
+    height: 800px;
+  }
 }

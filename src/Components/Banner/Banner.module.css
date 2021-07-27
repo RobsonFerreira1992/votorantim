@@ -25,3 +25,14 @@
   color: #b3dd33;
   margin-left: 185px;
 }
+
+@media(max-width:767px) {
+  .headerTitulo h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .headerTitulo h1 span {
+    margin-left: 0;
+    font-size: 30px;
+  }
+}

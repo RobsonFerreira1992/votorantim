@@ -21,6 +21,18 @@
   color: #fff;
 }
 
+.link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.active {
+  color: #b3dd33 !important;
+  font-family: 'votorantim-bold' !important;
+}
+
 @media(max-width:768px) {
   .navBar {
     position: absolute;
